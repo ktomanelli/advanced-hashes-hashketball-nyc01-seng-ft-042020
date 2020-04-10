@@ -137,6 +137,7 @@ def num_points_scored(player)
   end 
  end
 end 
+
 def shoe_size(player)
  game_hash.each do |item|
   item[1][:players].each_with_index do |p,i|   
@@ -146,10 +147,11 @@ def shoe_size(player)
   end 
  end
 end 
+
 def team_colors(team)
   game_hash.each do |item|
     if(item[1][:team_name]==team)
-      return item[i][:colors]
+      return item[1][:colors]
     end
   end 
 end
