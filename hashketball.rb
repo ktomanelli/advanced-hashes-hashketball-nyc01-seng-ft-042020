@@ -172,7 +172,7 @@ def player_numbers(team)
   nums
 end
 
-def player_stats
+def player_stats(player)
    game_hash.each do |item|
   item[1][:players].each_with_index do |p,i|   
     if(p[:player_name]==player)
