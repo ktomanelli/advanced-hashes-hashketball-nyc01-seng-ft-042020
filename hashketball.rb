@@ -186,7 +186,7 @@ def big_shoe_rebounds
   max=[0,'']
   game_hash.each do |item|
     item[1][:players].each_with_index do |p,i|   
-      if(p[:shoe]>max)
+      if(p[:shoe]>max[0])
         max[0] = p[:shoe]
         max[1] = p[:rebounds]
       end
