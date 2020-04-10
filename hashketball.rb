@@ -129,7 +129,9 @@ end
 # Write code here
 
 def num_points_scored(player)
-  if(game_hash.select
+  if(game_hash.select{|hash,key|
+    
+  }
     
   end
   
